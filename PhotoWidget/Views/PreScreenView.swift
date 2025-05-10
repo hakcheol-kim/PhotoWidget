@@ -20,8 +20,7 @@ struct PreScreenView: View {
     @Binding var selectedIndex: Int
     @StateObject private var appState = AppState.shared
     @Environment(\.colorScheme) var colorScheme
-    @State private var isDarkMode: Bool = false
-
+    
     init(isPresent: Binding<Bool>, selectedIndex: Binding<Int>, urls: [String]) {
         _isPresent = isPresent
         _selectedIndex = selectedIndex
@@ -108,9 +107,16 @@ struct PreScreenView: View {
                 .frame(width: geo.size.width*0.9, height: geo.size.height*0.7)
                 .offset(x: geo.size.width*0.05, y: geo.size.height*0.3)
             }
-            .environment(\.colorScheme, isDarkMode ? .dark : .light)
+            .environment(\.colorScheme, appState.currentScheme ?? .light)
             .onTapGesture {
-                isDarkMode.toggle()
+                switch appState.selectedTheme {
+                case .system:
+                    appState.selectedTheme = .light
+                case .dark:
+                    appState.selectedTheme = .light
+                case .light:
+                    appState.selectedTheme = .dark
+                }
             }
         }
     }

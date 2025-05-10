@@ -16,4 +16,18 @@ final class AppState: ObservableObject {
     @Published var naviPath = NavigationPath()
     @Published var appScene: AppScene = .intro
     
+    @AppStorage("SelectedTheme") var selectedTheme = Theme.light {
+        didSet {
+            updateTheme()
+        }
+    }
+    @Published var currentScheme: ColorScheme?
+    
+    init() {
+        updateTheme()
+    }
+    
+    private func updateTheme() {
+        currentScheme = selectedTheme.colorScheme
+    }
 }

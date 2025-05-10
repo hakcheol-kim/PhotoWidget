@@ -16,15 +16,12 @@ struct IntroView: View {
 
     var body: some View {
         ZStack {
-            Color.accentColor
-                .ignoresSafeArea()
-            
             HStack(spacing: 8) {
                 ForEach(Array(chars.enumerated()), id: \.offset) { index, ch in
                     Text(ch)
                         .font(.system(size: 50))
                         .fontWeight(.black)
-                        .foregroundColor(.white)
+                        .foregroundColor(.accentColor)
                 }
             }
             .overlay {

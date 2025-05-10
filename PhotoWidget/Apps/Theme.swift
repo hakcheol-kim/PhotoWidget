@@ -9,6 +9,7 @@ import SwiftUI
 
 enum Theme: Int, Identifiable, CaseIterable {
     var id: Self { self }
+    case system = 0
     case light = 1
     case dark = 2
 }
@@ -16,27 +17,23 @@ enum Theme: Int, Identifiable, CaseIterable {
 extension Theme {
     var title: String {
         switch self {
+        case .system:
+            return "📱 System"
         case .light:
             return "🌝 Light"
         case .dark:
             return "🌚 Dark"
         }
     }
-    var colorScheme: ColorScheme {
-        switch self {
-        case .light:
-            return .light
-        case .dark:
-            return .dark
-        }
-    }
     
-    func toggle() -> Self {
+    var colorScheme: ColorScheme? {
         switch self {
+        case .system:
+            return nil
         case .light:
-            return .dark
-        case .dark:
             return .light
+        case .dark:
+            return .dark
         }
     }
 }

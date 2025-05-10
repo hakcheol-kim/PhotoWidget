@@ -20,7 +20,7 @@ struct RootView: View {
                     .environmentObject(appState)
             }
         }
-        .preferredColorScheme(Theme.light.colorScheme)
+        .preferredColorScheme(appState.currentScheme)
         .background(Color.systemBackground)
     }
 }

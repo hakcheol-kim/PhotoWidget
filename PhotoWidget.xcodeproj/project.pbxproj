@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E9F068522DCEF85D00DB1DF3 /* PhotoWidgetSpm in Frameworks */ = {isa = PBXBuildFile; productRef = E9F068512DCEF85D00DB1DF3 /* PhotoWidgetSpm */; };
+		E9F068902DCF440900DB1DF3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E9F0688F2DCF440900DB1DF3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		E9972B7B2DCDA51C009A2FDA /* PhotoWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9972B892DCDA51D009A2FDA /* PhotoWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9972B932DCDA51D009A2FDA /* PhotoWidgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoWidgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F0688F2DCF440900DB1DF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -93,6 +95,7 @@
 		E9972B722DCDA51C009A2FDA = {
 			isa = PBXGroup;
 			children = (
+				E9F0688F2DCF440900DB1DF3 /* README.md */,
 				E9972B7D2DCDA51C009A2FDA /* PhotoWidget */,
 				E9972B8C2DCDA51D009A2FDA /* PhotoWidgetTests */,
 				E9972B962DCDA51D009A2FDA /* PhotoWidgetUITests */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F068902DCF440900DB1DF3 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
