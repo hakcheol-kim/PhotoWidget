@@ -22,3 +22,7 @@
 * ApiClient는 Router를 받아 실제 api서버에 데이터 요청 
 * concurrency로 async awit 사용함 
    
+## 외부 라이브러리 설명
+* PhotoWidgetSpm SwiftPackageManger 사용한다.
+  + SFSafeSymbols 애플서 제공하는 symbols 이미지를 쉽게 쓸수 있게 한다.
+  + 장단점: 이미지 아이콘을 symbol로 사용시 이미지 아이콘을 Text처럼 font, fontweigt, color 적용 할수 있고 다양한 Device 해상도 대응 가능
