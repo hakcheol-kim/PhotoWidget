@@ -14,8 +14,8 @@
 - 파일 위치: Common/ImageCacheManager
 * 메모리캐쉬 > 디스크 캐쉬 > 통신 으로 구현 
 * 메모리에 없으면 파일매니저에서 찾는다.
-> 파일 매니저에 있으면 메모리에 올리고 Image return Data
-> 파일 매니저에도 없으면 통신 요청 후 디스크저장, 메모리에도 올림
+  + 파일 매니저에 있으면 메모리에 올리고 Image return Data
+  + 파일 매니저에도 없으면 통신 요청 후 디스크저장, 메모리에도 올림
   
 ## 통신 설명
 * Router enum type는 Routable 프로토콜을 구현한다.
